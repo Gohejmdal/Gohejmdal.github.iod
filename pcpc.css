@@ -8,7 +8,7 @@
 
 html {
 
-background-image: url(https://cdn.discordapp.com/attachments/1057191261083279382/1097224132866887801/21.png);
+background-image: url(https://cdn.discordapp.com/attachments/1057191261083279382/1093970920332341429/4_2.png);
     background-size: cover!important;
     background-attachment: fixed;
     background-position: center center;
@@ -25,17 +25,36 @@ letter-spacing: -0.05em !important;
 
   font-family: 'GmarketSansMedium', woff2;
 
+  animation: snow 20s linear infinite;
+
+
+/*백그라운드 이미지 원근감느낌 이미지*/
+
+background-image:url('https://cdn.discordapp.com/attachments/1057191261083279382/1094145184775798824/heart.png');
+
+
 }
 
+
+/*뒷배경 움직이는 애니메이션*/
+
+@keyframes snow {
+
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+
+100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+
+
+}
 
 /* 사용자 설정 부분 */
 :root {
 	   --bgColor: #f0f0f0;   /* 배경 색 */
-	 --mainColor: #777777;   /* 메인 컬러 */
-	--mainColor5: #77777755; /* 공지, 인기글 hover */
-	--mainColor3: #77777733; /* 공지, 인기글 */
-	--mainColor2: #77777722; /* 트게더 메뉴, 게시글 hover */
-	--logoURL: url(https://cdn.discordapp.com/attachments/1057191261083279382/1097222112743280670/641e70fa368b2b9e.png);
+	 --mainColor: #FF9494;   /* 메인 컬러 */
+	--mainColor5: #FFD1D1; /* 공지, 인기글 hover */
+	--mainColor3: #FFD1D1; /* 공지, 인기글 */
+	--mainColor2: #FFD1D1; /* 트게더 메뉴, 게시글 hover */
+	--logoURL: url(https://cdn.discordapp.com/attachments/1057191261083279382/1093978026674507856/2.png);
 	--logoWidth: 200px;	 /* 로고 너비 */
 	--before: "고수 "; /* 접속자 수 앞 문구 */
 	--after: "명이 고나를 기다리는 중";  /* 접속자 수 뒤 문구 */
@@ -102,7 +121,7 @@ header #header-bar {
 
 /* 상단바 꾸미기 */
 header #header-bar>.row {
-border-top: 4px solid #777777;
+border-top: 4px solid #FF9494;
 border-right: none;
 border-bottom: none;
 background: var(--mainColor);
@@ -112,7 +131,7 @@ background: var(--mainColor);
 /* 스트리머 게시판 상단 정보 글씨색상 */
 
 #board-info #board-info-bottom a {
- color: #777777;
+ color: #FF9494;
 }
 
 
@@ -166,7 +185,7 @@ background: var(--mainColor);
 }
 
 #main .menu-wrapper>a{
-background: #dddddd;
+background: #FFF5E4;
 }
 
 #main .menu-wrapper>a>em,
@@ -186,7 +205,7 @@ background: #dddddd;
 #board-info {
 	margin: 0;
 	height: auto;
-	background: #dddddd;
+	background: #FFF5E4;
 	border: 2px solid var(--mainColor);
 	margin-bottom: 0.5em;
 }
@@ -233,7 +252,7 @@ img#board-info-profile-img:hover {
  font-size: 24px;
  vertical-align: top;
  padding-bottom: 3px;
- border-bottom: 1px solid #777777;
+ border-bottom: 1px solid #FF9494;
 }
 
 #board-info #board-info-bottom {
@@ -242,7 +261,7 @@ img#board-info-profile-img:hover {
 }
 
 #board-info #board-info-profile-img {
- border: 2px solid #777777;
+ border: 2px solid #FF9494;
  border-radius: 60%;
  width: 75px;
  height: 75px;
@@ -265,7 +284,7 @@ img#board-info-profile-img:hover {
 
 .frame>.frame,
 #article-list {
-	background: #dddddd;
+	background: #FFF5E4;
 	border: 2px solid var(--mainColor);
 }
 
@@ -354,7 +373,7 @@ img#board-info-profile-img:hover {
 
 /* 읽은 게시글 색상 */
 #article-list>.article-list-row>.item>.list-title>a:visited {
-    color: #4E31AA !important; /* 읽은 글 색상 코드 입력 */
+    color: #D864A9 !important; /* 읽은 글 색상 코드 입력 */
 }
 
 
@@ -387,7 +406,7 @@ img#board-info-profile-img:hover {
 
 /* 게시글 본문 */
 #article-info {
-	background: #dddddd;
+	background: #FFF5E4;
 	border: 2px solid var(--mainColor);
 	border-bottom: 1px;
 	margin-top: 0.5em;
@@ -409,7 +428,7 @@ img#board-info-profile-img:hover {
 
 #article-content-wrapper {
 	padding: 0;
-	background: #dddddd;
+	background: #FFF5E4;
 	border: 2px solid var(--mainColor);
 	border-bottom: 1px;
 }
@@ -429,7 +448,7 @@ img#board-info-profile-img:hover {
 	border-top: 2px solid var(--mainColor);
   border-bottom: 2px solid var(--mainColor);
   margin-bottom: 0.5em;
-	background: #dddddd;
+	background: #FFF5E4;
 }
 
 #article-neighbor-list {
@@ -451,7 +470,7 @@ img#board-info-profile-img:hover {
 /* 댓글 */
 #article-reply-area {
 	padding: 0;
-	background: #dddddd;
+	background: #FFF5E4;
 	border: 2px solid var(--mainColor);
     margin-top: 0.5em;
 	margin-bottom: 1em;
@@ -524,7 +543,7 @@ img#board-info-profile-img:hover {
 .input-group-btn.open .dropdown-menu {
 	opacity: unset;
 	transform: unset;
-    background: #dddddd;
+    background: #FFF5E4;
 	border: 2px solid var(--mainColor);
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.275);
 }
@@ -656,7 +675,7 @@ input[type='text']
 #movetotop {
    display: inline-block;
     opacity: 1;
-    background: url(https://cdn.discordapp.com/attachments/1057191261083279382/1097219646479933662/9184e1d9ba98f0b7.png);
+    background: url(https://cdn.discordapp.com/attachments/1057191261083279382/1093980250452545647/a9942255c7cf603c.png);
     width: 133px;
     height: 150px;
     background-size: contain;
@@ -667,7 +686,7 @@ header {
 
  height: 85px;
 
- background: url() no-repeat;
+ background: url(https://cdn.discordapp.com/attachments/1057191261083279382/1093970794813603991/2.png) no-repeat;
 
  background-size: contain;
 
